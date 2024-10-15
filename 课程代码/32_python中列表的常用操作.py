@@ -75,8 +75,14 @@
 # my_list.clear()
 # print(my_list)
 
-# 统计列表中的元素含量
+# 统计列表中的某元素含量
 # 语法: 列表.count(元素)
+# my_list = [1,1,1,2,3,4,1,2,3,4,5,6,'1','1']
+# print(my_list.count(1))
+# print(my_list.count('1'))
+
+# 统计列表里所有元素的数量
+# 使用len函数
 my_list = [1,1,1,2,3,4,1,2,3,4,5,6,'1','1']
-print(my_list.count(1))
-print(my_list.count('1'))
+count = len(my_list)
+print(count)
