@@ -19,7 +19,6 @@ print(new_name)
 # split方法
 # 按照指定的分隔字符串,将字符串分割为多个字符串,并存入列表对象中
 # 注意:字符串本身不变只是得到一个新的列表
-
 my_str = "hello my school"
 my_str_list = my_str.split(' ')
 print(my_str_list)
@@ -28,6 +27,7 @@ print(my_str_list)
 # 去除字符串前后空格()使用.strip()
 # 去除指定的元素
 # 对于第二个情况,会去除每个元素比如.strip('123'),那么1 2 3都会去除
+# 注意:该方法还可以去除掉换行符\n
 my_str = "   hello world   "
 new_my_str = my_str.strip()
 print(new_my_str)

@@ -12,7 +12,7 @@
 # 对list进行切片
 my_list = [0,1,2,3,4,5,6,7,8]
 result1 = my_list[1:4]
-print(result1) # [1,2,3,4]
+print(result1) # [1,2,3]
 
 # 对tuple进行切片
 my_tuple = (0,1,2,3,4,5,6,7,8)
@@ -22,7 +22,7 @@ print(result2) # 012345678
 # 对str进行切片
 my_str = "012345678"
 result3 = my_str[::2]
-print(result3) # 0246
+print(result3) # 02468
 
 # 对序列进行切片,从头开始到最后结束,步长为-1
 result4 = my_str[::-1]
@@ -30,7 +30,7 @@ print(result4) # 876543210
 
 # 对列表进行切片从3开始到1结束,步长为-1
 result5 = my_list[3:1:-1]
-print(result5) # 31
+print(result5) # 32
 
 # 对元组进行切片,从头开始,到尾结束,步长为-2
 result6 = my_tuple[::-2]

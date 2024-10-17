@@ -3,7 +3,7 @@
 # class MyClass:
 #     def add(self,x,y):
 #         """
-#         Purpose: 加
+#         purpose: 加
 #         """
 #         return x+y
 #     # end def
