@@ -24,15 +24,16 @@ print(type(f))
 # print(line3)
 
 # for循环读取文件
-# for line in f:
-#     print(line)
+for line in f:
+    print(line)
+    print(type(line))
 
 # 文件的关闭
 # 使用.close()方法
 # f.close()
 
 # with open 语法
-with open('/测试/python.txt', 'r', encoding='utf-8') as f:
-    for line in f:
-        print(line)
+# with open('/测试/python.txt', 'r', encoding='utf-8') as f:
+#     for line in f:
+#         print(line)
 
