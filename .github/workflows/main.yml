@@ -11,7 +11,7 @@ jobs:
         uses: Yikun/hub-mirror-action@master
         with:
           src: github/Hanserwei
-          dst: gitee/Hanser_wei
+          dst: gitee/hanser_wei_admin
           dst_key: '${{ secrets.GITEE_PRIVATE_KEY }}'
           dst_token: '${{ secrets.GITEE_TOKEN }}'
           static_list: pythonProject
