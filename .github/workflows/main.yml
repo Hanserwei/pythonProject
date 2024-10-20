@@ -34,6 +34,7 @@ jobs:
           static_list: ${{ github.event.repository.name }}
           force_update: true
           clone_style: "ssh"
+          lfs: true
           # 还有黑、白名单，静态名单机制，可以用于更新某些指定库
           # static_list: 'repo_name,repo_name2'
           # black_list: 'repo_name,repo_name2'
