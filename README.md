@@ -424,5 +424,35 @@
     print(f"集合对象排序的结果是{sorted(my_set,reverse=True)}")
     print(f"字典对象排序的结果是{sorted(my_dict,reverse=True)}")
     ```
+  - 多态的概念
+    ```python
+    # 多态是指多种状态,在完成某个行为的时候,使用不同的对象得到不同的状态
+
+    class Animal:
+        def speak(self):
+            pass
     
+    class Dog(Animal):
+        def speak(self):
+            print("汪汪汪!")
+    
+    class Cat(Animal):
+        def speak(self):
+            print("喵喵喵!")
+    
+    def make_noise(animal:Animal):
+        animal.speak()
+    
+    dog = Dog()
+    cat = Cat()
+    
+    make_noise(dog)
+    make_noise(cat)
+    ```
+    
+在代码中，`make_noise` 函数接受一个参数 `animal`，它的类型是 `Animal`。由于 `Dog` 和 `Cat` 都是 `Animal` 的子类，并且它们都实现了 `speak` 方法，因此你可以将 `Dog` 或 `Cat` 的实例传递给 `make_noise` 函数。
+
+Python 支持多态，这意味着你可以使用父类类型的引用来调用子类的方法。在 `make_noise` 中调用 `animal.speak()` 时，实际上会调用传入对象的具体类中的 `speak` 方法。如果传入的是 `Dog` 的实例，就会调用 `Dog` 类的 `speak` 方法；如果是 `Cat` 的实例，就会调用 `Cat` 类的 `speak` 方法。
+
+这是一个面向对象编程的基本特性，使得代码更具灵活性和可扩展性。简单来说，只要传入的对象是 `Animal` 类型或其子类，`make_noise` 就能正确调用对应的 `speak` 方法。
 
