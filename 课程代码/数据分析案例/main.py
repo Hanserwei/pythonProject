@@ -2,11 +2,11 @@ from pyecharts.charts import Bar
 from pyecharts.globals import ThemeType
 from pyecharts.options import TitleOpts, LabelOpts, InitOpts
 
-from file_define import FileReader,DateCsvReader,JsonReader
+from file_define import FileReader,DataCsvReader,DataJsonReader
 from data_define import DataRecorder
 
-csv_file_reader = DateCsvReader('./2011年1月销售数据.txt')
-json_file_reader = JsonReader('./2011年2月销售数据JSON.txt')
+csv_file_reader = DataCsvReader('./2011年1月销售数据.txt')
+json_file_reader = DataJsonReader('./2011年2月销售数据JSON.txt')
 
 jan_data: list[DataRecorder] = csv_file_reader.read_data()
 feb_data: list[DataRecorder] = json_file_reader.read_data()
